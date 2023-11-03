@@ -42,6 +42,8 @@
 </template>
 
 <script lang="ts" setup>
+import { data } from "@/store/testString"
+
 import {
   Bool, Character,
   CircuitString, PrivateKey, Signature
@@ -49,18 +51,18 @@ import {
 
 // --------------------------------------
 
-const char1 = Character.fromString('c');
-const char2 = Character.fromString('d');
-const char1EqualsChar2: Bool = char1.equals(char2);
+// const char1 = Character.fromString('c');
+// const char2 = Character.fromString('d');
+// const char1EqualsChar2: Bool = char1.equals(char2);
 
-console.log(`char1: ${char1}`);
-console.log(`char1 === char2: ${char1EqualsChar2.toString()}`);
-console.log(`Fields in char1: ${char1.toFields().length}`);
-console.log('--------------------------------------');
+// console.log(`char1: ${char1}`);
+// console.log(`char1 === char2: ${char1EqualsChar2.toString()}`);
+// console.log(`Fields in char1: ${char1.toFields().length}`);
+// console.log('--------------------------------------');
 
 // --------------------------------------
 
-const str1 = CircuitString.fromString('abc..xyz');
+const str1 = CircuitString.fromString(data);
 console.log(`str1: ${str1}`);
 console.log(`Fields in str1: ${str1.toFields().length}`);
 
@@ -70,7 +72,7 @@ const zkAppPrivateKey = PrivateKey.random();
 const zkAppPublicKey = zkAppPrivateKey.toPublicKey();
 
 // const data1 = char2.toFields().concat(signedNumSum.toFields());
-const data2 = char1.toFields().concat(str1.toFields());
+const data2 = str1.toFields()//char1.toFields().concat(str1.toFields());
 
 const signature = Signature.create(zkAppPrivateKey, data2);
 
@@ -89,4 +91,6 @@ console.log(`Fields in signature: ${signature.toFields().length}`);
 console.log('--------------------------------------');
 
 // --------------------------------------
+
+console.log("string size : ", new Blob([data]).size);
 </script>
