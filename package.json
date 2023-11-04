@@ -3,10 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview",
-    "lint": "eslint . --fix --ignore-path .gitignore"
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "eslint . --fix --ignore-path .gitignore",
+    "dev": "vite",
+    "preview": "vite preview"
   },
   "dependencies": {
     "@mdi/font": "7.0.96",
@@ -22,9 +23,14 @@
     "@babel/types": "^7.21.4",
     "@types/node": "^18.15.0",
     "@vitejs/plugin-vue": "^4.0.0",
+    "@vue/cli-plugin-unit-jest": "~5.0.0",
     "@vue/eslint-config-typescript": "^11.0.0",
+    "@vue/test-utils": "^2.0.0-0",
+    "@vue/vue3-jest": "^27.0.0-alpha.1",
+    "babel-jest": "^27.0.6",
     "eslint": "^8.37.0",
     "eslint-plugin-vue": "^9.3.0",
+    "jest": "^27.0.5",
     "sass": "^1.60.0",
     "typescript": "^5.0.0",
     "unplugin-fonts": "^1.0.3",
