@@ -11,10 +11,12 @@
   },
   "dependencies": {
     "@mdi/font": "7.0.96",
+    "@types/jest": "^29.5.7",
     "core-js": "^3.29.0",
     "o1js": "^0.14.0",
     "pinia": "^2.0.0",
     "roboto-fontface": "*",
+    "ts-jest": "^29.1.1",
     "vue": "^3.2.0",
     "vue-router": "^4.0.0",
     "vuetify": "^3.0.0"
@@ -30,7 +32,7 @@
     "babel-jest": "^27.0.6",
     "eslint": "^8.37.0",
     "eslint-plugin-vue": "^9.3.0",
-    "jest": "^27.0.5",
+    "jest": "^27.5.1",
     "sass": "^1.60.0",
     "typescript": "^5.0.0",
     "unplugin-fonts": "^1.0.3",
