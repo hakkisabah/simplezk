@@ -1,2 +1,0 @@
-export const data = "c3b6fc33126b143f5da16825c9de40187ba3e17ee988ee334a62fec27ca956c3sadsdasdas62fec27ca956c3sadsdasdas27ca956c3sadsdasdas3sadsdasdas"
-
