@@ -2,7 +2,7 @@
   <div>Vue and TDD</div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import { CircuitString, PrivateKey, Signature } from 'o1js'
 
 // --------------------------------------

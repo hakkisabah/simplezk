@@ -1,24 +1,53 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
+    // "target": "ESNext",
+    // "module": "ESNext",
+    // "outDir": "./build",
+    // "rootDir": ".",
+    // "skipLibCheck": true,
+    // "strict": true,
+    // "forceConsistentCasingInFileNames": true,
+    // "strictPropertyInitialization": false, // to enable generic constructors, e.g. on CircuitValue
+    // "moduleResolution": "node",
+    // "experimentalDecorators": true,
+    // "emitDecoratorMetadata": true,
+    // "allowJs": true,
+    // "declaration": true,
+    // "sourceMap": true,
+    // "noFallthroughCasesInSwitch": true,
+    // "esModuleInterop": true,
+    // "allowSyntheticDefaultImports": true,
+    // "noUnusedLocals": true,
+    // "noUnusedParameters": true,
+    // "isolatedModules": true,
+    // "noImplicitAny": true,
+    // "resolveJsonModule": true,
+    // "jsx": "preserve",
+    // "baseUrl": ".",
+    // "lib": ["ESNext", "dom"],
+    // "paths": {
+    //   "@/*": ["./src/*"]
+    // }
+    "target": "ES2020",
+    "module": "es2022",
+    "lib": ["dom", "esnext"],
+    "outDir": "./build",
+    "rootDir": ".",
     "strict": true,
-    "moduleResolution": "node",
+    "strictPropertyInitialization": false, // to enable generic constructors, e.g. on CircuitValue
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
     "esModuleInterop": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "allowJs": true,
+    "declaration": true,
+    "sourceMap": true,
+    "noFallthroughCasesInSwitch": true,
     "allowSyntheticDefaultImports": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "isolatedModules": true,
-    "noImplicitAny": true,
-    "resolveJsonModule": true,
-    "jsx": "preserve",
-    "importHelpers": true,
-    "baseUrl": ".",
-    "lib": ["ESNext", "dom"],
-    "paths": {
-      "@/*": ["./src/*"]
-    }
+    "isolatedModules": true
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.vue"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "./src/**/*.test.ts"]
 }
